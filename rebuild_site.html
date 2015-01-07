@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Boerlowie's Blog | Blog about VMware, PowerShell, PowerCLI, Active Directory, Exchange, SQL, ...</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1><a href="">Boerlowie's Blog</a></h1>
+			<p>Blog about VMware, PowerShell, PowerCLI, Active Directory, Exchange, SQL, ...</p>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Contents</a></li>
+				<li><a href="">About Me</a></li>
+			</ul>
+		</header>
+
+		<article>
+			<h1><a href="">How to Shrink a Thin VMDK on ESXi 5.0</a></h1>
+			<time datetime="2012-09-06">September 6, 2012</time>
+
+			<section>
+				<! -- my assumption is that the articles are using the iframe tag -->
+
+				<p>I always like to keep my template small. This means the files inside the VM, but the size of the VMDK as well. The reason for this is that I often need to download the VM to USB storage of whatever and transfer it to remote sites.</p>
+
+				<p>So I wanted to shrink my VMDK size as much as possible. After cleaning up the VM itself and running <strong>sdelete</strong>, it's time to shrink the VMDK.</p>
+
+				<p>First let's review the actual usage of it:</p>
+
+				<p>The virtual disk size can be seen with <strong>ls -lh *.vmdk</strong>.</p>
+
+				<img src="https://boerlowie.files.wordpress.com/2012/09/image.png">
+
+				<p>To see the 'real' size of the vmdk, run <strong>du -h *.vmdk</strong>. This gives us a <strong>36 GB</strong> size (while the VM itself actually uses about 10 GB).</p>
+
+				<a href="">Read more...</a>
+
+				<ul>
+					<li><a href="">VMware</a>,</li>
+					<li><a href="">vSphere</a>,</li>
+					<li><a href="">vSphere 5</a></li>
+				</ul>
+
+				<a href="">hrink thin provisioning vmdk vmkfstools punchzero</a>
+			<section>
+		</article>
+
+		<article>
+			<h1><a href="">vSphere 5.1 Release Date leaked? (Updated)</a></h1>
+			<time datetime="2012-07-31">July 31, 2012</time>
+
+			<section>
+				<p>VMware asked me to pull the post about the release date.</p>
+
+				<p>So I guess you all have to wait for VMware to release some more info (and not by accident like they did yesterday).</p>
+
+				<ul>
+					<li><a href="">PowerCLI</a>,</li>
+					<li><a href="">VMWare</a>,</li>
+					<li><a href="">vSphere 5</a></li>
+				</ul>
+
+				<a href="">vSphere 5.1</a>
+			</section>
+		</article>
+
+		<aside>
+			<section>
+				<h3>Random Posts</h3>
+				<ul>
+					<li><a href="">Building the Ultimate vSphere Lab - Part 6: Domain Controller</a></li>
+					<li><a href="">Starting vSphere Client in other locales</a></li>
+					<li><a href="">How to Shrink a Thin VMDK on ESXi 5.0</a></li>
+					<li><a href="">Set verbose logging on Emulex Driver in ESX 3.5</a></li>
+					<li><a href="">Building the Ultimate vSphere Lab - Part 7: SQL Server</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Tag Cloud</h3>
+				<a href="">shrink thin provisioning vmdk vmkfstools punchzero</a>
+				<a href="">vSphere 5.1</a>
+			</section>
+
+			<section>
+				<h3>Categories</h3>
+				<ul>
+					<li><a href="">Hardware</a></li>
+					<li><a href="">Network</a></li>
+					<li><a href="">PowerCLI</a></li>
+					<li><a href="">PowerShell</a></li>
+					<li><a href="">Storage</a></li>
+					<li><a href="">Ultimate vSphere Lab</a></li>
+					<li><a href="">Uncategorized</a></li>
+					<li><a href="">VMware</a></li>
+				</ul>
+			</section>
+		</aside>
+
+		<footer>
+			<p>Bowerlowie's Blog</p>
+			<p>Blog at WordPress.com. The INove Theme.</p>
+		</footer>
+	</body>
+</html>
